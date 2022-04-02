@@ -19,7 +19,8 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - matplotlib >=3.4.3
+    - python >=3.7
+    - matplotlib-base >=3.4.3
     - napari >=0.4.12
     - napari-plugin-engine >=0.2.0
     - numpy >=1.21.4
