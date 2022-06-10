@@ -144,5 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@ch-n](https://github.com/ch-n/)
-* [@conda-forge/napari](https://github.com/conda-forge/napari/)
+* [@goanpeca](https://github.com/goanpeca/)
+* [@jaimergp](https://github.com/jaimergp/)
 
