@@ -1,5 +1,5 @@
 {% set name = "napari-time-series-plotter" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-time_series_plotter-{{ version }}.tar.gz
-  sha256: 237d4eb2154cd2b1b90920ecddea9998fbf7bea25edfcd7a7f6fe5cfe899c50a
+  sha256: 64b4ee2558a63f98ea491de3e09cedf3a58a235b1099724dfa17687e23bcecc4
 
 build:
   noarch: python
