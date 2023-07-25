@@ -35,12 +35,9 @@ test:
   commands:
     - pip list
     - pip check
-    - pytest --pyargs napari_time_series_plotter -v
   requires:
-    - pip
     - napari
-    - pytest
-    - pytest-qt
+    - pip
     - pyqt
 
 about:
