@@ -22,9 +22,10 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - napari-matplotlib >=0.2.1
+    - napari-matplotlib <1.0
     - napari-plugin-engine >=0.2.0
     - numpy >=1.21.4
+    - pandas
     - python >=3.8
     - qtpy >=1.11.2
 
@@ -33,13 +34,14 @@ test:
     - napari_time_series_plotter
   commands:
     - pip list
-    # - pip check
+    - pip check
     - pytest --pyargs napari_time_series_plotter -v
   requires:
     - pip
     - napari
     - pytest
     - pytest-qt
+    - pyqt
 
 about:
   home: https://github.com/ch-n/napari-time_series_plotter
@@ -49,6 +51,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - ch-n
+    - Chris-N-K
     - goanpeca
     - jaimergp
