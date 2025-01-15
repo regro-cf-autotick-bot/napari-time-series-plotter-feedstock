@@ -6,27 +6,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-time_series_plotter-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/napari-time_series_plotter-{{ version }}.tar.gz
   sha256: 49b5727bb2362a4c01316c90d7039e76f1337e13170c2e25b8ed171afac09181
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   script_env:
     - QT_QPA_PLATFORM=offscreen
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - napari-matplotlib <1.0
     - napari-plugin-engine >=0.2.0
     - numpy >=1.21.4
     - pandas
-    - python >=3.8
+    - python >={{ python_min }}
     - qtpy >=1.11.2
 
 test:
@@ -39,6 +39,7 @@ test:
     - napari
     - pip
     - pyqt
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ch-n/napari-time_series_plotter
